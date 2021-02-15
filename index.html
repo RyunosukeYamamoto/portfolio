@@ -2,9 +2,85 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <title>山本龍之介のポートフォリオ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+    <link rel="stylesheet", href="index.css">
+    
+    <title>山本龍之介のポートフォリオサイト</title>
   </head>
   <body>
-    <h2>これは僕のポートフォリオです</h2>
+    <header>
+      <h2 style="text-align:center;">Ryunosuke Yamamoto's Portforio</h2>
+    </header>
+    <div class="container">
+      <h2 class="mt-3">BookRecord</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="./images/book-record.png" alt="BookRecordスクリーンショット">
+        </div>
+        <div class="col-md-6">
+          <div class="words"><h4>開発開始日</h4><p>2021年1月26日~</p></div>
+          <div class="words"><h4>説明</h4><p>本を読み切ることができず挫折してしまうという悩みを解決するために作成。他のユーザと交流しながら読書の記録をつけることができる。</p></div>
+          <div class="words"><h4>主な機能</h4>
+            <ul>
+              <li>ユーザーログイン機能</li>
+              <li>本の登録、投稿機能(GoogleBooksAPIを使用)</li>
+              <li>ユーザ同士のフォロー、アンフォロー</li>
+              <li>投稿に対するコメント機能</li>
+              <li>今月の読了数ランキング</li>
+            </ul>
+          </div>
+          <div class="words"><h4>使用技術</h4><p>Ruby on Rails/HTML/CSS(SCSS)/Bootstrap</p></div>
+          <div class="words"><h4>GitHub URL</h4><a href="https://github.com/RyunosukeYamamoto/book-reco">https://github.com/RyunosukeYamamoto/book-reco</a></div>
+          <div class="words">
+            <h4>アプリ URL</h4>
+            <a href="https://reco-book.herokuapp.com/">https://reco-book.herokuapp.com/</a>
+            <p>※以下のアカウントでログインできます。<br>メールアドレス：guest@guest.guest, パスワード：guest</p>
+          </div>
+        </div>
+      </div>
+      
+      <h2 class="mt-3">EcoShow</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="./images/eco-show.png" alt="EcoShowスクリーンショット">
+        </div>
+        <div class="col-md-6">
+          <div class="words"><h4>開発開始日</h4><p>2021年1月19日~</p></div>
+          <div class="words"><h4>説明</h4><p>身近なところからCO2排出量の削減に興味を持ってもらいたいという思いから作成。CO2排出量削減のためのアクションを自動車の走行距離に換算することで、より削減量がイメージしやすいようにした。</p></div>
+          <div class="words"><h4>主な機能</h4>
+            <ul>
+              <li>ユーザログイン機能</li>
+              <li>エコアクションとそれによるCO2削減量の登録、編集、削除</li>
+              <li>ユーザのCO2削減量を自動車の走行距離に換算</li>
+              <li>目標の登録とそれまでの到達度の表示</li>
+            </ul>
+          </div>
+          <div class="words"><h4>使用技術</h4><p>Ruby on Rails/HTML/CSS/Bootstrap</p></div>
+          <div class="words">
+            <h4>GitHub URL</h4><a href="https://github.com/RyunosukeYamamoto/my_co2app_EcoShow">https://github.com/RyunosukeYamamoto/my_co2app_EcoShow</a></div>
+          <div class="words">
+            <h4>アプリ URL</h4>
+            <a href="https://co2-board.herokuapp.com/">https://co2-board.herokuapp.com/</a>
+            <p>※以下のアカウントでログインできます。<br>メールアドレス：guest@guest.guest, パスワード：guest</p>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    <div class="about_me mt-4", style="text-align:center;">
+      <h2 style="text-align:center;">Profile</h2>
+      <h4 style="text-align:center;">山本龍之介</h4>
+      <p style="text-align:center;">大学3年。Ruby on Railsを用いたWebアプリケーションを作成しています。</p>
+      <p style="text-align:center;">Ruby on Rails/Ruby/HTML/CSS/Python/Django(勉強中)/JavaScript(勉強中)</p>
+      <a href="https://github.com/RyunosukeYamamoto">GitHubアカウント</a>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"></script>
   </body>
 </html>

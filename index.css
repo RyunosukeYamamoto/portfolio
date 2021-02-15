@@ -1,0 +1,48 @@
+header{
+    background-color:#74645c;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.container h2{
+    border-bottom: 7px solid #dfcb8c;
+}
+
+
+@media(min-width:768px){
+    .words h4{
+        float: left;
+        width: 30%;
+    }
+
+    .words p{
+        float: left;
+        width: 70%;
+    }
+    
+    .words ul{
+        float:left;
+        width:70%;
+    }
+
+    .words a{
+        float: left;
+        width: 70%;
+    }
+
+    .words:after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
+img{
+    width: 100%;
+}
+
+.about_me{
+    background-color: #b0dbd4;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
