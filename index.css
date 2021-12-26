@@ -4,11 +4,34 @@ header{
     padding-bottom: 20px;
 }
 
+nav {
+    width: 100%;
+    background: #c5c8c4;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+nav li{
+    display: inline-block;
+    width: 33%;
+	list-style-type: none;
+    text-align: center;
+}
+nav li a{
+	text-decoration: none;
+	display: block;
+	padding: 20px 25px;
+	color: #FFF;
+	border-bottom: 1px solid #40555F;
+}
+nav li a:hover{
+	background:#56676F;
+}
+
 .container h2{
     border-bottom: 7px solid #dfcb8c;
 }
-
-
 @media(min-width:768px){
     .words h4{
         float: left;

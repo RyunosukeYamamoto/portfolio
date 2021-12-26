@@ -3,19 +3,52 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    
-    <link rel="stylesheet", href="index.css">
+    <link rel="stylesheet" href="index.css">
     
     <title>山本龍之介のポートフォリオサイト</title>
   </head>
   <body>
     <header>
-      <h2 style="text-align:center;">Ryunosuke Yamamoto's Portforio</h2>
+      <h1 style="text-align:center;">Ryunosuke Yamamoto's Portforio</h1>
     </header>
+    <nav>
+      <ul>
+        <li><a href="#groomings">Groomings(仮)</a></li>
+        <li><a href="#mens">MensGrooming</a></li>
+        <li><a href="#clother">Clother</a></li>
+        <li><a href="#bookreco">BookRecord</a></li>
+        <li><a href="#ecoshow">EcoShow</a></li>
+      </ul>
+    </nav>
     <div class="container">
-      <h2 class="mt-3">MensGrooming</h2>
+      <h2 id="groomings" class="mt-3">Groomings(仮)</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="./images/groomings.png" alt="Groomingsスクリーンショット">
+        </div>
+        <div class="col-md-6">
+          <div class="words"><h4>開発開始日</h4><p>2021年8月24日~</p></div>
+          <div class="words"><h4>説明</h4><p>男性の身だしなみに関する悩みを他ユーザーと共有して解決したり、人気のある身だしなみに詳しいユーザーに相談したりできるアプリ。</p></div>
+          <div class="words"><h4>主な機能</h4>
+            <ul>
+              <li>身だしなみに関する悩みの投稿とそれに対するコメント</li>
+              <li>人気ユーザーへの秘密の相談(他ユーザーからは見えない)</li>
+              <li>ポイント制による悪質ユーザーの排除(一定のポイント以上を持っていないとコメントや秘密の相談はできない)</li>
+              <li>通知機能</li>
+              <li>ユーザーのポイント数 他のランキング表示</li>
+              <li>お気に入り機能</li>
+            </ul>
+          </div>
+          <div class="words"><h4>使用技術</h4><p>Django/HTML/CSS/Bootstrap</p></div>
+          <h5><a href="#">GitHub URL</a></h5>
+          <h5><a href="https://groomings.herokuapp.com/">アプリ URL</a></h5>
+          <h5><a href="./grooming_explanation/grooming.html">アプリ紹介LP</a></h5>
+          <p>※以下のアカウントでログインできます。<br>まだアカウントを作っていません</p>
+        </div>
+      </div>
+
+      <h2 id="mens" class="mt-3">MensGrooming</h2>
       <div class="row">
         <div class="col-md-6">
           <img src="./images/mens-grooming.png" alt="MensGroomingスクリーンショット">
@@ -27,7 +60,7 @@
             <ul>
               <li>ユーザーログイン機能</li>
               <li>美容情報の投稿</li>
-              <li>投稿を悩み毎に分類/li>
+              <li>投稿を悩み毎に分類</li>
               <li>悩みから投稿を検索する機能</li>
               <li>キーワードや投稿時のユーザーの年齢から投稿を検索する機能</li>
               <li>お気に入り機能</li>
@@ -42,7 +75,7 @@
         </div>
       </div>
       
-      <h2 class="mt-3">Clother</h2>
+      <h2 id="clother" class="mt-3">Clother</h2>
       <div class="row">
         <div class="col-md-6">
           <img src="./images/clother.png" alt="Clotherスクリーンショット">
@@ -69,7 +102,7 @@
         </div>
       </div>
       
-      <h2 class="mt-3">BookRecord</h2>
+      <h2 id="bookreco" class="mt-3">BookRecord</h2>
       <div class="row">
         <div class="col-md-6">
           <img src="./images/book-record.png" alt="BookRecordスクリーンショット">
@@ -95,7 +128,7 @@
         </div>
       </div>
       
-      <h2 class="mt-3">EcoShow</h2>
+      <h2 id="ecoshow" class="mt-3">EcoShow</h2>
       <div class="row">
         <div class="col-md-6">
           <img src="./images/eco-show.png" alt="EcoShowスクリーンショット">
@@ -122,18 +155,20 @@
       
     </div>
       
-    <div class="about_me mt-4", style="text-align:center;">
+    <footer class="about_me mt-4" style="text-align:center;">
       <h2 style="text-align:center;">Profile</h2>
       <h4 style="text-align:center;">山本龍之介</h4>
       <p style="text-align:center;">大学3年。Ruby on Railsを用いたWebアプリケーションを作成しています。</p>
       <p style="text-align:center;">Ruby on Rails/Ruby/HTML/CSS/Python/Django(勉強中)/JavaScript(勉強中)</p>
       <a href="https://github.com/RyunosukeYamamoto">GitHubアカウント</a><br>
-      <p>メール：<a href="mailto:ryunosukeyamamoto0@gmail.com">ryunosukeyamamoto0@gmail.com</a></p>
-    </div>
+      <p>メール: <a href="mailto:ryunosukeyamamoto0@gmail.com">ryunosukeyamamoto0@gmail.com</a></p>
+    </footer>
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"></script>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
   </body>
 </html>
