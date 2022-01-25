@@ -66,6 +66,10 @@ h2, h3{
     width: 95%;
 }
 
+.english{
+    word-break: break-all;
+}
+
 .info {
     color: #fff;
     background: #942D2F;
