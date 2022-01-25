@@ -4,17 +4,213 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./index.css">
-    
+
     <title>山本龍之介のポートフォリオサイト</title>
   </head>
   <body>
-    <header>
-      <h1 style="text-align:center;">Ryunosuke Yamamoto's Portforio</h1>
+    <header class="name">
+      <!-- <div class="images"><img src="images/top.png" alt="トップの画像" width="100%"></div> -->
+      <h1 class="title">Ryunosuke Yamamoto</h1>
     </header>
     <nav>
       <ul>
-        <li><a href="#groomings">Groomings(仮)</a></li>
+        <li><a href="#webapp">webapp</a></li>
+        <li><a href="#concept">concept</a></li>
+        <li><a href="#profile">profile</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <h2 class="mt-4" id="concept">concept</h2>
+      <div class="concept-p">
+        <p>hoghoghoehgoeohg</p>
+      </div>
+      <h2 class="mt-4">特に力を入れたアプリ</h2>
+      <div class="feature">
+        <h3 class="mt-4">Mens Notion</h3>
+        <div class="row">
+          <div class="col-6 special-app-image">
+            <img src="images/mens-notion.png" width="100%">
+          </div>
+          <div class="col-6">
+            <p>大学の授業の一環として4人のチームで作成した。コロナ禍で男性の身だしなみや美容への意識が高まっていると分かり、
+              男性向けの身だしなみの悩み解決アプリを作成しようと思い開発を始めた。</p>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="mt-4" id="webapp">web app</h2>
+      <div class="webapp-images">
+        <div class="image mens-notion-image">
+          <img src="images/mens-notion.png">
+          <div class="mask">
+            <div class="caption">MensNotion<br>
+              <a href="#mensnotion-modaal" class="info"><span>Read More</span></a>
+            </div>
+          </div>
+        </div>
+        <section id="mensnotion-modaal" class="hide-area">
+          <h2>MensNotion</h2>
+          <img src="./images/mens-notion.png" alt="MensNotionスクリーンショット" width="30%">
+          <div class="words"><h4>開発開始日</h4><p>2021年8月24日~</p></div>
+          <div class="words"><h4>説明</h4><p>男性の身だしなみに関する悩みを他ユーザーと共有して解決したり、人気のある身だしなみに詳しいユーザーに相談したりできるアプリ。</p></div>
+          <div class="words"><h4>主な機能</h4>
+            <ul>
+              <li>身だしなみに関する悩みの投稿とそれに対するコメント</li>
+              <li>人気ユーザーへの秘密の相談(他ユーザーからは見えない)</li>
+              <li>ポイント制による悪質ユーザーの排除(一定のポイント以上を持っていないとコメントや秘密の相談はできない)</li>
+              <li>通知機能</li>
+              <li>ユーザーのポイント数 他のランキング表示</li>
+              <li>お気に入り機能</li>
+            </ul>
+          </div>
+          <div class="words"><h4>使用技術</h4><p class="avoid-font">Django/HTML/CSS/Bootstrap</p></div>
+          <h5><a href="#">GitHub URL</a></h5>
+          <h5><a href="https://groomings.herokuapp.com/">アプリ URL</a></h5>
+          <h5><a href="./grooming_explanation/grooming.html">アプリ紹介LP</a></h5>
+        </section>
+
+        <div class="image mens-grooming-image">
+          <img src="images/mens-grooming.png">
+          <div class="mask">
+            <div class="caption">MensGrooming<br>
+              <a href="#mensgrooming-modaal" class="info"><span>Read More</span></a>
+            </div>
+          </div>
+        </div>
+        <section id="mensgrooming-modaal" class="hide-area">
+          <h2>MensGrooming</h2>
+          <img src="./images/mens-grooming.png" alt="MensGroomingスクリーンショット" width="30%">
+          
+          <div class="words"><h4>開発開始日</h4><p>2021年4月24日~</p></div>
+          <div class="words"><h4>説明</h4><p>男性もスキンケアやメイクで身だしなみをする時代、しかし美容の情報はほとんどが女性に向けて書かれたもの。そこで男性のための美容情報を共有できるアプリを作った。</p></div>
+          <div class="words"><h4>主な機能</h4>
+            <ul>
+              <li>ユーザーログイン機能</li>
+              <li>美容情報の投稿</li>
+              <li>投稿を悩み毎に分類</li>
+              <li>悩みから投稿を検索する機能</li>
+              <li>キーワードや投稿時のユーザーの年齢から投稿を検索する機能</li>
+              <li>お気に入り機能</li>
+            </ul>
+          </div>
+          <div class="words"><h4>使用技術</h4><p class="avoid-font">Ruby on Rails/HTML/CSS/Bootstrap</p></div>
+          <h5><a href="https://github.com/RyunosukeYamamoto/mens_grooming">GitHub URL</a></h5>
+          <h5>
+            <a href="https://mens-grooming.herokuapp.com/">アプリ URL</a>
+          </h5>
+          <p class="avoid-font">※以下のアカウントでログインできます。<br>メールアドレス:guest@guest.guest, パスワード:guest</p>
+        </section>
+
+
+        <div class="image clother-image">
+          <img src="images/clother.png">
+          <div class="mask">
+            <div class="caption">Clother<br>
+              <a href="#clother-modaal" class="info"><span>Read More</span></a>
+            </div>
+          </div>
+        </div>
+        <section id="clother-modaal" class="hide-area">
+          <h2>Clother</h2>
+          <img src="./images/clother.png" alt="Clotherスクリーンショット" width="30%">
+          <div class="words"><h4>開発開始日</h4><p>2021年2月17日~</p></div>
+          <div class="words"><h4>説明</h4><p>その日着る服を決めるのがめんどくさいという悩みを解決するために開発。手持ちの服を登録しておくと、現在の気温から自動でコーデを提案してくれる。</p></div>
+          <div class="words"><h4>主な機能</h4>
+            <ul>
+              <li>ユーザーログイン機能</li>
+              <li>現在の気温と天気の取得(<span class="avoid-font">OpenWeatherMapAPI</span>を使用)</li>
+              <li>服の登録(画像アップロードには<span class="avoid-font">carrierwave</span>を使用)※<span class="avoid-font">Heroku</span>上で、画像をアップロードすると数分後消えてしまいます。(今後AWS S3と連携の予定)</li>
+              <li>服のカテゴリー分類(複数のカテゴリーに分類可)</li>
+              <li>カテゴリーの気温パターンへの分類(10~15°Cのときはこの組み合わせなどという感じ)(複数の気温パターンに分類化)</li>
+              <li>服の提案(現在の気温と登録した気温パターンをもとに自動で服を提案)</li>
+            </ul>
+          </div>
+          <div class="words"><h4>使用技術</h4><p class="avoid-font">Ruby on Rails/HTML/CSS/JavaScript/JQuery/Bootstrap</p></div>
+          <h5><a href="https://github.com/RyunosukeYamamoto/clother">GitHub URL</a></h5>
+          <h5>
+            <a href="https://clothser.herokuapp.com/">アプリ URL</a>
+          </h5>
+          <p class="avoid-font">※以下のアカウントでログインできます。<br>メールアドレス:guest@guest.guest, パスワード:guest</p>
+        </section>
+
+
+        <div class="image book-record-image">
+          <img src="images/book-record.png">
+          <div class="mask">
+            <div class="caption">BookRecord<br>
+              <a href="#bookrecord-modaal" class="info"><span>Read More</span></a>
+            </div>
+          </div>
+        </div>
+        <section id="bookrecord-modaal" class="hide-area">
+          <h2>BookRecord</h2>
+          <img src="./images/book-record.png" alt="BookRecordスクリーンショット" width="30%">
+          <div class="words"><h4>開発開始日</h4><p>2021年1月26日~</p></div>
+          <div class="words"><h4>説明</h4><p>本を読み切ることができず挫折してしまうという悩みを解決するために作成。他のユーザと交流しながら読書の記録をつけることができる。</p></div>
+          <div class="words"><h4>主な機能</h4>
+            <ul>
+              <li>ユーザーログイン機能</li>
+              <li>本の登録、投稿機能(<span class="avoid-font">GoogleBooksAPI</span>を使用)</li>
+              <li>ユーザ同士のフォロー、アンフォロー</li>
+              <li>投稿に対するコメント機能</li>
+              <li>今月の読了数ランキング</li>
+            </ul>
+          </div>
+          <div class="words"><h4>使用技術</h4><p class="avoid-font">Ruby on Rails/HTML/CSS(SCSS)/Bootstrap</p></div>
+          <h5><a href="https://github.com/RyunosukeYamamoto/book-reco">GitHub URL</a></h5>
+          <h5>
+            <a href="https://reco-book.herokuapp.com/">アプリ URL</a>
+          </h5>
+          <p class="avoid-font">※以下のアカウントでログインできます。<br>メールアドレス:guest@guest.guest, パスワード:guest</p>
+        </section>
+
+
+        <div class="image eco-show-image">
+          <img src="images/eco-show.png">
+          <div class="mask">
+            <div class="caption">EcoShow<br>
+              <a href="#ecoshow-modaal" class="info"><span>Read More</span></a>
+            </div>
+          </div>
+        </div>
+        <section id="ecoshow-modaal" class="hide-area">
+          <h2>EcoShow</h2>
+          <img src="./images/eco-show.png" alt="EcoShowスクリーンショット" width="30%">
+          <div class="words"><h4>開発開始日</h4><p>2021年1月19日~</p></div>
+          <div class="words"><h4>説明</h4><p>身近なところからCO2排出量の削減に興味を持ってもらいたいという思いから作成。CO2排出量削減のためのアクションを自動車の走行距離に換算することで、より削減量がイメージしやすいようにした。</p></div>
+          <div class="words"><h4>主な機能</h4>
+            <ul>
+              <li>ユーザログイン機能</li>
+              <li>エコアクションとそれによるCO2削減量の登録、編集、削除</li>
+              <li>ユーザのCO2削減量を自動車の走行距離に換算</li>
+              <li>目標の登録とそれまでの到達度の表示</li>
+            </ul>
+          </div>
+          <div class="words"><h4>使用技術</h4><p class="avoid-font">Ruby on Rails/HTML/CSS/Bootstrap</p></div>
+          <h5><a href="https://github.com/RyunosukeYamamoto/my_co2app_EcoShow">GitHub URL</a></h5>
+          <h5>
+            <a href="https://co2-board.herokuapp.com/">アプリ URL</a>
+          </h5>
+          <p class="avoid-font">※以下のアカウントでログインできます。<br>メールアドレス:guest@guest.guest, パスワード:guest</p>
+        </section>
+      </div>
+    </div>
+
+
+
+
+
+
+    <!-- <nav>
+      <ul>
+        <li><a href="#groomings">MensNotion</a></li>
         <li><a href="#mens">MensGrooming</a></li>
         <li><a href="#clother">Clother</a></li>
         <li><a href="#bookreco">BookRecord</a></li>
@@ -22,10 +218,10 @@
       </ul>
     </nav>
     <div class="container">
-      <h2 id="groomings" class="mt-3">Groomings(仮)</h2>
+      <h2 id="groomings" class="mt-3">MensNotion</h2>
       <div class="row">
         <div class="col-md-6">
-          <img src="./images/groomings.png" alt="Groomingsスクリーンショット">
+          <img src="./images/mens-notion.png" alt="MensNotionスクリーンショット">
         </div>
         <div class="col-md-6">
           <div class="words"><h4>開発開始日</h4><p>2021年8月24日~</p></div>
@@ -44,7 +240,6 @@
           <h5><a href="#">GitHub URL</a></h5>
           <h5><a href="https://groomings.herokuapp.com/">アプリ URL</a></h5>
           <h5><a href="./grooming_explanation/grooming.html">アプリ紹介LP</a></h5>
-          <p>※以下のアカウントでログインできます。<br>まだアカウントを作っていません</p>
         </div>
       </div>
 
@@ -153,22 +348,27 @@
         </div>
       </div>
       
-    </div>
+    </div> -->
       
-    <footer class="about_me mt-4" style="text-align:center;">
+    <footer id="profile" class="about_me mt-4" style="text-align:center;">
       <h2 style="text-align:center;">Profile</h2>
-      <h4 style="text-align:center;">山本龍之介</h4>
-      <p style="text-align:center;">大学3年。Ruby on Railsを用いたWebアプリケーションを作成しています。</p>
-      <p style="text-align:center;">Ruby on Rails/Ruby/HTML/CSS/Python/Django(勉強中)/JavaScript(勉強中)</p>
-      <a href="https://github.com/RyunosukeYamamoto">GitHubアカウント</a><br>
-      <p>メール: <a href="mailto:ryunosukeyamamoto0@gmail.com">ryunosukeyamamoto0@gmail.com</a></p>
+      <div class="avoid-font">
+        <h4 style="text-align:center;">山本龍之介</h4>
+        <p style="text-align:center;">大学4年。Ruby on RailsやDjangoを用いたWebアプリケーションを作成しています。</p>
+        <p style="text-align:center;">Ruby on Rails/Ruby/Python/Django/HTML/CSS/JavaScript/Swift(勉強中)</p>
+        <a href="https://github.com/RyunosukeYamamoto">GitHubアカウント</a><br>
+        <p>メール: <a href="mailto:ryunosukeyamamoto0@gmail.com">ryunosukeyamamoto0@gmail.com</a></p>
+      </div>
+      <p id="page-top" class="hide-btn"><a href="#top">Page Top</a></p>
     </footer>
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
     <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
   </body>
 </html>
