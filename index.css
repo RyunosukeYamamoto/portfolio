@@ -159,7 +159,6 @@ h2, h3{
     font-family: 'Quattrocento', serif;
 }
 
-
 #page-top a{
 	display: flex;
 	justify-content:center;
@@ -221,4 +220,10 @@ h2, h3{
   	opacity: 1;
 	transform: translateY(100px);
   }
+}
+
+@media (max-width: 767px){
+    .me-img{
+        width: 25%;
+    }
 }
