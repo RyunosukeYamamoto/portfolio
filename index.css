@@ -49,6 +49,23 @@ h2, h3{
     border-top: solid 1px #942D2F;
     border-bottom: solid 1px #942D2F;
 }
+
+.special-lp {
+    color: #fff;
+    background: #005eac;
+    padding: 5px 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+.special-lp span {
+    display:inline-block;
+    transition: .5s;
+}
+.special-lp:hover span{
+    text-decoration: none;
+    color: #f9f9f9;
+    transform: rotateX(360deg);
+}
 .image{
     text-align: center;
     display: inline-block;
@@ -89,7 +106,7 @@ h2, h3{
 
 
 
-.image {
+.image, .special-app-image {
 	/* width:			280px;
 	height:			188px; */
 	overflow:		hidden;
@@ -97,14 +114,14 @@ h2, h3{
 	position:		relative;	/* 相対位置指定 */
     margin-bottom: 40px;
 }
-.image .caption {
+.image .caption, .special-app-image .caption {
 	font-size:		110%;
     font-family: 'Quattrocento', serif;
 	text-align: 		center;
 	padding-top: 20px;
 	color:			#fff;
 }
-.image .mask {
+.image .mask, .special-app-image .mask {
 	width:			100%;
 	height:			100%;
 	position:		absolute;	/* 絶対位置指定 */
@@ -115,7 +132,7 @@ h2, h3{
 	-webkit-transition:	all 0.2s ease;
 	transition:		all 0.2s ease;
 }
-.image:hover .mask {
+.image:hover .mask, .special-app-image:hover .mask {
 	opacity:		1;	/* マスクを表示する */
 }
 
